@@ -26,7 +26,7 @@ class AdminPanelProvider extends PanelProvider
         return $panel
             ->default()
             ->id('admin')
-            ->path(env('FILAMENT_PATH_ADMIN'))
+            ->path(env('FILAMENT_PATH_ADMIN', 'admin'))
             ->login()
             ->colors([
                 'primary' => Color::Amber,
